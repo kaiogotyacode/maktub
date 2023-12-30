@@ -1,18 +1,26 @@
-import { FaAlignJustify } from "react-icons/fa";
+import {FaBars } from "react-icons/fa";
 import style from "./NavBar.module.css";
+import { useState } from "react";
 
 function NavBar() {
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  function ToggleMenu() {
+    setMenuOpen(!isMenuOpen);
+  }
+
   return (
     <>
-      <nav className={style.nav}>
-        <div className={style.menu}>
-          <FaAlignJustify className={style.menuIcon} />
+      <nav className={`${style.nav}`}>
+        <div onClick={ToggleMenu} className={style.menu}>
+          <FaBars className={style.menuIcon} />
         </div>
         <div className={style.logo}>
           <h1 className="font-bold">NavBar</h1>
         </div>
-
-        <div className={style.divOptions}>
+        
+        <div className={`${style.divOptions} ${!isMenuOpen ? style.visible : style.hidden }`} >
           <ul className={style.options}>
             <li className={style.itemOption}>
               <a>Agendas</a>
@@ -24,9 +32,7 @@ function NavBar() {
               <a>Cadernos</a>
             </li>
           </ul>
-          <div className={style.optionsBackDrop}>
-            
-          </div>
+          <div className={style.optionsBackDrop}></div>
         </div>
       </nav>
     </>

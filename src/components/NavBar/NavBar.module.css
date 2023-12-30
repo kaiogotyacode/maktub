@@ -15,11 +15,11 @@
 }
 
 .divOptions{
-    @apply absolute bg-blue-300 top-[10vh] w-full h-[90vh] flex
+    @apply absolute bg-blue-300 top-[10vh] w-full h-[90vh] flex transition duration-200
 }
 
 .optionsBackDrop{
-    @apply bg-blue-100 h-full w-20
+    @apply bg-white h-full w-20
 }
 
 .options{
@@ -28,4 +28,12 @@
 
 .itemOption{
     @apply text-center font-semibold  bg-blue-50 p-3 hover:bg-blue-100 cursor-pointer transition duration-100
+}
+
+.visible{
+    @apply opacity-0 pointer-events-none
+}
+
+.hidden {
+    @apply opacity-100 pointer-events-auto
 }
