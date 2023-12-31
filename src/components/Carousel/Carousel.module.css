@@ -1,0 +1,7 @@
+.carouselContainer{
+    @apply w-full h-52 bg-gray-500 md:mt-[48px]
+}
+
+.imgContainer{
+    @apply w-full h-full object-cover
+}

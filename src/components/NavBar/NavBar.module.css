@@ -3,7 +3,7 @@
 }
 
 .menu{
-    @apply flex items-center justify-center p-3
+    @apply flex items-center justify-center p-3 md:hidden
 }
 
 .menuIcon{
@@ -15,15 +15,15 @@
 }
 
 .divOptions{
-    @apply absolute bg-gray-100 top-[10vh] w-full h-[90vh] flex transition-all duration-300 md:!ml-0 md:!pointer-events-auto md:h-auto
+    @apply absolute bg-transparent md:bg-gray-100 top-[10vh] w-full h-[90vh] flex transition-all duration-300 md:!ml-0 md:!pointer-events-auto md:h-auto
 }
 
 .optionsBackDrop{
-    @apply bg-white h-full w-20 md:hidden
+    @apply bg-transparent h-full w-20 md:hidden backdrop-blur-sm
 }
 
 .options{
-    @apply relative w-full md:w-auto md:flex
+    @apply bg-gray-100 relative w-full md:w-auto md:flex
 }
 
 .itemOption{
