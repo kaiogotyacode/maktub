@@ -1,0 +1,39 @@
+.nav{
+    @apply bg-gray-950 h-[10vh] flex
+}
+
+.menu{
+    @apply flex items-center justify-center p-3
+}
+
+.menuIcon{
+    @apply h-8 w-8 cursor-pointer md:hidden
+}
+
+.logo{
+    @apply text-white w-full flex justify-center items-center text-xl md:text-4xl
+}
+
+.divOptions{
+    @apply absolute bg-gray-100 top-[10vh] w-full h-[90vh] flex transition-all duration-300 md:!ml-0 md:!pointer-events-auto md:h-auto
+}
+
+.optionsBackDrop{
+    @apply bg-white h-full w-20 md:hidden
+}
+
+.options{
+    @apply relative w-full md:w-auto md:flex
+}
+
+.itemOption{
+    @apply text-center font-semibold  bg-gray-100 p-3 hover:bg-gray-200 cursor-pointer transition-all duration-100
+}
+
+.visible{
+    @apply  pointer-events-auto ml-0 
+}
+
+.hidden {
+    @apply  pointer-events-none ml-[-100vw]
+}
