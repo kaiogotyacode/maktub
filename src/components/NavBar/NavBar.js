@@ -14,13 +14,13 @@ function NavBar() {
     <>
       <nav className={`${style.nav}`}>
         <div onClick={ToggleMenu} className={style.menu}>
-          <FaBars className={style.menuIcon} />
+          <FaBars className={style.menuIcon} fill="white" />
         </div>
         <div className={style.logo}>
-          <h1 className="font-bold">NavBar</h1>
+          <h1 className="font-bold">Maktub Logo</h1>
         </div>
         
-        <div className={`${style.divOptions} ${!isMenuOpen ? style.visible : style.hidden }`} >
+        <div className={`${isMenuOpen ? style.visible : style.hidden } ${style.divOptions}`} >
           <ul className={style.options}>
             <li className={style.itemOption}>
               <a>Agendas</a>
@@ -34,6 +34,7 @@ function NavBar() {
           </ul>
           <div className={style.optionsBackDrop}></div>
         </div>
+        
       </nav>
     </>
   );
