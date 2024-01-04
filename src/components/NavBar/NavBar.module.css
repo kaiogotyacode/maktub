@@ -15,7 +15,7 @@
 }
 
 .divOptions{
-    @apply absolute bg-transparent md:bg-gray-100 top-[10vh] w-full h-[90vh] flex transition-all duration-300 md:!ml-0 md:!pointer-events-auto md:h-auto
+    @apply z-50 absolute bg-transparent md:bg-gray-100 top-[10vh] w-full h-[90vh] flex transition-all duration-300 md:!ml-0 md:!pointer-events-auto md:h-auto
 }
 
 .optionsBackDrop{
