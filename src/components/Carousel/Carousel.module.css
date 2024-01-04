@@ -1,0 +1,16 @@
+.carouselContainer {
+  @apply w-full h-auto  md:mt-[48px] overflow-hidden;
+}
+
+.imgContainer {
+  @apply w-full h-full object-cover;
+}
+
+.carouselArrow {
+  @apply w-full h-full cursor-pointer hover:text-gray-500 transition-all duration-200;
+}
+
+.carouselItem{
+  @apply  bg-gray-500 aspect-[16/9] md:aspect-[14/2.5]
+}
+
