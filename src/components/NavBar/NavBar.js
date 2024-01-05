@@ -54,8 +54,6 @@ function NavBar() {
           <div className={style.optionsBackDrop}></div>
         </div>
       </nav>
-
-      <SearchBar/>
     </>
   );
 }
