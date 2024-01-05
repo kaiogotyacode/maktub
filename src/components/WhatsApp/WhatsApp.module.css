@@ -1,0 +1,15 @@
+.whatsAppContainer {
+  @apply fixed bottom-4 right-4 aspect-square w-[70px] lg:w-[90px] flex flex-col;
+}
+
+.whatsAppIcon {
+  @apply w-full h-full cursor-pointer hover:fill-green-600 transitionClass p-3;
+}
+
+.transitionClass {
+  @apply duration-200 transition-all ease-in-out;
+}
+
+.whatsAppLabel {
+  @apply text-center font-bold text-[12px] lg:text-[15px] text-green-800 mb-[-8px];
+}
