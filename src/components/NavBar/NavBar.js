@@ -1,5 +1,6 @@
 import {FaBars } from "react-icons/fa";
 import style from "./NavBar.module.css";
+import SearchBar from "../SearchBar/SearchBar";
 import { useState } from "react";
 
 function NavBar() {
@@ -31,10 +32,27 @@ function NavBar() {
             <li className={style.itemOption}>
               <a>Cadernos</a>
             </li>
+            <li className={style.itemOption}>
+              <a>Agendas</a>
+            </li>
+            <li className={style.itemOption}>
+              <a>Canetas</a>
+            </li>
+            <li className={style.itemOption}>
+              <a>Cadernos</a>
+            </li>
+            <li className={style.itemOption}>
+              <a>Agendas</a>
+            </li>
+            <li className={style.itemOption}>
+              <a>Canetas</a>
+            </li>
+            <li className={style.itemOption}>
+              <a>Cadernos</a>
+            </li>
           </ul>
           <div className={style.optionsBackDrop}></div>
         </div>
-        
       </nav>
     </>
   );
