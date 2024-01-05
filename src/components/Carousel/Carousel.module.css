@@ -1,5 +1,5 @@
 .carouselContainer {
-  @apply w-full h-auto  md:mt-[48px] overflow-hidden;
+  @apply aspect-[16/9] md:aspect-[14/2.5]  md:mt-[48px] overflow-hidden;
 }
 
 .imgContainer {
