@@ -1,7 +1,35 @@
-.searchBarContainer{
-    @apply w-full h-16 md:h-20 bg-gray-300 md:p-3 md:mt-[48px] flex justify-center items-center
+.searchBarContainer {
+  @apply w-full h-16 md:h-20 bg-gray-200 md:p-3 md:mt-[48px] flex justify-center items-center transitionClass;
 }
 
-.searchBar{
-    @apply w-full md:w-[80vw] h-full md:h-12 md:rounded-md border border-black
+.searchBar {
+  @apply w-full md:w-[60vw] h-full md:h-12 md:rounded-md md:border border-black bg-gray-100 flex overflow-hidden;
+}
+
+.magnifierContainer {
+  @apply h-full aspect-square p-5 md:p-3  rounded-tl rounded-bl bg-gray-100;
+}
+
+.transitionClass {
+  @apply transition-all ease-in-out duration-200;
+}
+
+.magnifierIcon {
+  @apply h-full w-full;
+}
+
+.search {
+  @apply flex justify-center items-center  w-full;
+}
+
+.searchInput {
+  @apply w-full h-full outline-none bg-inherit;
+}
+
+.searchDivisor {
+  @apply aspect-square p-4 md:p-3 cursor-pointer;
+}
+
+.eraserIcon {
+  @apply h-full w-full hover:text-gray-500 transitionClass;
 }
